@@ -1,0 +1,123 @@
+
+ body{
+  background-image: linear-gradient(to right, rgba(173, 41, 41, 0), rgb(165, 49, 49));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.square {
+  background: rgb(189, 150, 150);
+  border: 1px solid #999;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  /* display: inline-block; */
+    text-decoration: none;
+    color: rgb(15, 5, 5);
+    font-weight: bold;
+    background-color: #2d6896;
+    margin: 10px;
+    border: 1px solid #2d6898;
+    background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+ }
+ .square:active {
+  background-image: linear-gradient(bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+ }
+ 
+ 
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+ }
+ 
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+ }
+.game-load{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
+  margin-left: 20px;
+
+ }
+ .status {
+  margin-bottom: 20px;
+  
+ }
+ ul button{
+   background-color: rgb(139, 119, 187);
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+ }
+
+ .game-info div{
+   background-attachment:black;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+ }
+
+
+ 
+.container{
+  align-items: center;
+  height: auto;
+  width: 380px;
+  max-width: 100%;
+  margin-top: 50px;
+}
+.header h2{
+  margin-left: 20%;
+  padding: 20px 40px;
+  }
+ .form{
+  padding: 30px 40px;
+}
+.form-control{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+
+}
+.form-control input{
+  border: 2px solid #161515;
+  border-radius: 4%;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 90%;
+}
+.form button{
+  background-color: #b28af3;
+  border: 2px solid #0a090a;
+  border-radius: 4%;
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+  width: 98%;
+}
